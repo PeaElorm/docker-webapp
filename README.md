@@ -19,5 +19,5 @@ if($username == 'admin' && $password == 'password') {
     echo "Welcome! This is codeIgnitors' admin";} 
     else{echo "Invalid username or password.";}?>
 ```
-docker build -t perfectelorm/docker-webapp .
-docker run -p 8080:80 perfectelorm/docker-webapp
+- docker build -t perfectelorm/docker-webapp .
+- docker run -p 8080:80 perfectelorm/docker-webapp
