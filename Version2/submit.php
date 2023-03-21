@@ -1,3 +1,6 @@
-<?php$username = $_POST['username'];
+<?php
+$username = $_POST['username'];
 $password = $_POST['password'];
-if ($username == 'admin' && $password == 'password') {    echo "Login successful!";} else {    echo "Invalid username or password.";}?>
+if($username == 'admin' && $password == 'password') {
+    echo "Welcome! This is codeIgnitors' admin";} 
+    else{echo "Invalid username or password.";}?>
