@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <title>Project Title</title>
+    <title>CodeIgnitors Login Form</title>
   </head>
   <body>
     <div class="container">
-        <h1>Azubi Docker Form</h1>
-    <form action="submit.php" method="POST">
-      <label for=""
-        >Username:
-        <input type="text" />
-      </label>
-      <label for=""
-        >Password:
-        <input type="password" />
-      </label>
-    </form>
-    <button class="btn">submit</button>
+      <h2>CodeIgnitors Login</h2>
+      <form >
+        <div class="form-control">
+          <input type="text" name="username" id="username" required />
+          <label for="username">Username</label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" name="password" id="password" required />
+          <label for="password">Password</label>
+        </div>
+
+        <!-- <button class="btn">Login</button> -->
+        <input type="submit" value="Login" class="btn">
+        <p class="text">Don't have an account? <a href="#">Register</a></p>
+      </form>
     </div>
   </body>
 </html>
