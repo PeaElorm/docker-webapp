@@ -31,5 +31,11 @@ if($username == 'Perfect' && $password == '#2468.') {
     echo "Welcome! This is codeIgnitors' admin";} 
     else{echo "Invalid username or password.";}?>
 ```
+
+## Building and running the containers
 - docker build -t perfectelorm/docker-webapp .
 - docker run -p 8080:80 perfectelorm/docker-webapp
+- open port 8080 to view your project.
+- NB: I chose to run my project in Gitpod (I already have the docker extenxion and configurations done)
+
+
