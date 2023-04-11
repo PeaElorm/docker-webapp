@@ -95,8 +95,6 @@ sudo ./aws/install
 ![stopped](https://user-images.githubusercontent.com/68542385/231057177-25d5f1ea-8e09-4f49-aebe-946fd61f0bd6.PNG)
 
 
-![task](https://user-images.githubusercontent.com/68542385/231055371-546b0254-bb73-4310-bcac-b30bc73e20d4.PNG)
-
 
 
 
