@@ -38,7 +38,7 @@ if($username == 'Perfect' && $password == '#2468.') {
 - open port 8080 to view your project.
 - NB: I chose to run my project in Gitpod (I already have the docker extenxion and configurations done)
 
-##Pushing Version2 to AWS
+## Pushing Version2 to AWS
 - Create an Amazon ECS cluster
 - Upload/ Push your Image to AWS ECR (like docker hub).
 - Create a public repo
