@@ -38,4 +38,16 @@ if($username == 'Perfect' && $password == '#2468.') {
 - open port 8080 to view your project.
 - NB: I chose to run my project in Gitpod (I already have the docker extenxion and configurations done)
 
+##Pushing Version2 to AWS
+- Create an Amazon ECS cluster
+- Upload/ Push your Image to AWS ECR (like docker hub).
+- Create a public repo
+- Open the repo
+- Click on “view push commands” to see how to push to ECR. *Give your repo the same name to simplify things. E.g., docker-web-app. You will need AWS CLI installed
+- Run AWS configure in your terminal: You will need an IAM user (access keys & secret keys
+- Go ahead with the commands from AWS. You might need to add an ECR policy for users to run the first command.
+ - Set up an Amazon ECS task definition with Fargate launch type and specify the Docker image you just created as the container image for the task definition. (Get the Uri from the repo)
+- Launch a new Fargate task using the task definition you just created.  
+- (Wait for 5-10 min until everything is running) Access the web app by going to the Fargate task's public IP address.
+
 
