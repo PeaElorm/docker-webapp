@@ -47,10 +47,27 @@ if($username == 'Perfect' && $password == '#2468.') {
 - search for IAM. on the left nav bar, select users.
 - select the IAM user and click on add permissions.
 - next, click on attach policy directly.
+-  Search for AmazonECS_FUllAccess and add it.
 - You should see something like this after edit permissions is complete;
 ![full access](https://user-images.githubusercontent.com/68542385/231045547-fe18a3c1-04ec-4145-98bb-7dc4de9e217c.PNG)
 
-- Search for AmazonECS_FUllAccess and add it.
+### Deploying the docker container to ECS;
+- In your AWS console, search for ECR and select.
+- click on Create Repository.
+- Under general setting, select public and name your project and then create repositoy.
+![repo](https://user-images.githubusercontent.com/68542385/231046975-ab475da1-ddc1-412c-913c-c8b987837846.png)
+
+### Tag the image
+- For ECR to know the repo being pushed, we must tag the image with the URI generated when the repo was created.
+```yaml
+docker tag <image name URI>
+docker tag <image name URI>
+```
+
+### Making your AWS Account accessible to your Docker CLI
+
+
+
 - Create an Amazon ECS cluster
 - Upload/ Push your Image to AWS ECR (like docker hub).
 - Create a public repo
