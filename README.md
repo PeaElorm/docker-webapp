@@ -1,4 +1,4 @@
-# docker-webapp (creating a webapp, hosting on AWS ECS, and creating a database)
+# docker-webapp (creating a webapp, Deploying the Docker Conainer with AWS ECS and Fargate, and creating a database)
 ##Creating the Project Files
 - On your computer, create a project folder. for the start, we will need two versions, go ahead and create two subfolders V1 and V2
 - code in the contents of your project into the respective subfolders.
