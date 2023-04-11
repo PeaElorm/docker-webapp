@@ -65,6 +65,39 @@ docker tag <image name URI>
 ```
 
 ### Making your AWS Account accessible to your Docker CLI
+- Input the following into your docker terminal
+```yaml
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
+- run aws --version
+- now, run aws configure and input your AWS when prompted.
+
+### Create Fargate Cluster.
+- Search for ecs in the console
+- CLick on create cluster
+- Fill in the details and create
+![Cluster created](https://user-images.githubusercontent.com/68542385/231052739-148dd8de-a21b-4534-abe8-fa2331cb60ee.PNG)
+- CLick on tasks definitions on the side nav snd then click on Creatr new task definition.
+- Name the task and select your task memory and cpu. mine was 0.5GB and 0.25vCPU, respectively.
+- fill in the rest of the details. you need the ARN for the image URL.
+- click add
+![task def](https://user-images.githubusercontent.com/68542385/231055402-f362b613-851a-4591-9005-46ee86597b4c.PNG)
+- go to the task definition page. select run task in the actions dropdown
+- select fargate, at least one vpc and subnet
+- click on run task.
+- check to be sure task is running
+![running](https://user-images.githubusercontent.com/68542385/231055593-dc4e70b4-270e-4167-be50-6a6595d64d92.PNG)
+- click on it and open the public ip in another tab. This should show your project.
+- Delete the cluster to avoid charges
+![delete cluster](https://user-images.githubusercontent.com/68542385/231057175-9924f486-6061-405d-a9c9-7209ea2e032c.PNG)
+![stopped](https://user-images.githubusercontent.com/68542385/231057177-25d5f1ea-8e09-4f49-aebe-946fd61f0bd6.PNG)
+
+
+![task](https://user-images.githubusercontent.com/68542385/231055371-546b0254-bb73-4310-bcac-b30bc73e20d4.PNG)
+
+
 
 
 
