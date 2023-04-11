@@ -39,6 +39,18 @@ if($username == 'Perfect' && $password == '#2468.') {
 - NB: I chose to run my project in Gitpod (I already have the docker extenxion and configurations done)
 
 ## Pushing Version2 to AWS
+- Note: As indicated in the title, we will use AWS ECS, ECR and Fargate. With ECS, we will create a task to deploy our docker image to a container. ECR is the versioned storage for Docker images on AWS. ECR pulls the images from ECR then deploys. Fargate manages the cluster of compute instances, no need for you to manage the unlying infrustructure.
+- This guide already assumes you have an IAM user.
+
+### Editing ECS access policy
+- Login to your AWS IAM account.
+- search for IAM. on the left nav bar, select users.
+- select the IAM user and click on add permissions.
+- next, click on attach policy directly.
+- You should see something like this after edit permissions is complete;
+![full access](https://user-images.githubusercontent.com/68542385/231045547-fe18a3c1-04ec-4145-98bb-7dc4de9e217c.PNG)
+
+- Search for AmazonECS_FUllAccess and add it.
 - Create an Amazon ECS cluster
 - Upload/ Push your Image to AWS ECR (like docker hub).
 - Create a public repo
