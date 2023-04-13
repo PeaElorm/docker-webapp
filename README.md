@@ -95,10 +95,6 @@ sudo ./aws/install
 ![stopped](https://user-images.githubusercontent.com/68542385/231057177-25d5f1ea-8e09-4f49-aebe-946fd61f0bd6.PNG)
 
 
-
-
-
-
 - Create an Amazon ECS cluster
 - Upload/ Push your Image to AWS ECR (like docker hub).
 - Create a public repo
@@ -109,5 +105,8 @@ sudo ./aws/install
  - Set up an Amazon ECS task definition with Fargate launch type and specify the Docker image you just created as the container image for the task definition. (Get the Uri from the repo)
 - Launch a new Fargate task using the task definition you just created.  
 - (Wait for 5-10 min until everything is running) Access the web app by going to the Fargate task's public IP address.
+
+## Adding a manual DynamoDB table.
+purpose: A guestbook table that will allow us record data of all visitors of our webabbp
 
 
