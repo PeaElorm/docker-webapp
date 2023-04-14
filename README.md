@@ -116,6 +116,6 @@ purpose: A guestbook table that will allow us record data of all visitors of our
 - populate the table with the add new attributes button. 
 - add as many rows as you want. 
 
-## Link dynamodb to the webpage
+## Link dynamodb to the webpage.
 
 
