@@ -107,6 +107,15 @@ sudo ./aws/install
 - (Wait for 5-10 min until everything is running) Access the web app by going to the Fargate task's public IP address.
 
 ## Adding a manual DynamoDB table.
-purpose: A guestbook table that will allow us record data of all visitors of our webabbp
+purpose: A guestbook table that will allow us record data of all visitors of our webabbp.
+- Inside your aws Management console, search for dynamodb. 
+- click on the button to create a table after the pages is loaded. 
+- fill in the partition and sort key inputs and create table 
+- create a global secondary index of the other fields. 
+- add items to the table by clicking on explore items.
+- populate the table with the add new attributes button. 
+- add as many rows as you want. 
+
+## Link dynamodb to the webpage
 
 
