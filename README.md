@@ -119,3 +119,4 @@ purpose: A guestbook table that will allow us record data of all visitors of our
 ## Link dynamodb to the webpage.
 
 
+```composer require aws/aws-sdk-php```
